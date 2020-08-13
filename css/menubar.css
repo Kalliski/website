@@ -10,7 +10,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #F5F5DC;
+  background: #8B8878;
   color: black;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .navbarnoboottrap {
   overflow: hidden;
-  background-color: #333;
+  background-color: #FFF68F;
 }
 
 .navbarnoboottrap a {
@@ -47,7 +47,7 @@ body {
 
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #FFF68F;
   padding: 20px;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 footer {
-  background-color: #777;
+  background-color: #FFF68F;
   padding: 10px;
   text-align: center;
   color: white;
@@ -117,7 +117,7 @@ body {
 .dropdown-contentnoboottrap {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #FFF68F;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -125,7 +125,7 @@ body {
 .dropdown-contentnoboottrapright {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #FFF68F;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
