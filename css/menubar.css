@@ -17,11 +17,6 @@ body {
 .header h1 {
   font-size: 40px;
 }
-img {
-    vertical-align: middle;
-    max-height: 25px;
-    max-width: 160px;
-}
 
 .navbarnoboottrap {
   overflow: hidden;
