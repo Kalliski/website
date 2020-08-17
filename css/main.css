@@ -10,7 +10,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
-  background: #8B8878;
+  background: #F5F5DC;
   color: black;
 }
 
@@ -412,7 +412,7 @@ background: black;
 }
 
 .grid-unit:hover{
-    outline: 1px #EADFDC;
+    outline: 1px solid blue;
   }
 
 
