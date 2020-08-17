@@ -11,62 +11,74 @@
 <link rel="stylesheet" href="https://scriptsupporter.com/css/menubar.css">
 </head>
 <body>
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    jQuery(function($){
+    $('.right').prev('img').remove()
+})
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 
 
-<div class="navbarnoboottrap">
+<div class="topnav" id="myTopnav">
 
-  <a href="https://scriptsupporter.com/en/index.html">Home</a>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Google App Script 
+  <a href="https://scriptsupporter.com/index.html" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Google App Script 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
-      <a href="https://scriptsupporter.com/en/GoogleAppScript/sheets.html">Sheets</a>
+    <div class="dropdown-content">
+ <a href="https://scriptsupporter.com/en/GoogleAppScript/sheets.html">Sheets</a>
       <a href="https://scriptsupporter.com/en/GoogleAppScript/docs.html">Docs</a>
       <a href="https://scriptsupporter.com/en/GoogleAppScript/aboutGoogleAppScript.html">About</a>
     </div>
 </div>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Education
+  <div class="dropdown">
+    <button class="dropbtn">Education
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/en/education/digitize.html">digitize</a>
       <a href="https://scriptsupporter.com/en/education/whatwecando.html">What we can do</a>
     </div>
 </div>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Transfer
+  <div class="dropdown">
+    <button class="dropbtn">Transfer
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/en/transfer/g-suite.html">G-suite</a>
       <a href="https://scriptsupporter.com/en/transfer/digitize.html">digitize</a>
       <a href="https://scriptsupporter.com/en/transfer/linkingsystemstogether.html">Linking systems together</a>
     </div>
 </div>
   <div class="right">
-  <div class="dropdownnoboottrapright">
-    <button class="dropbtnnoboottrap">Contact
+  <div class="dropdown">
+    <button class="dropbtn">Contact
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrapright">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/en/contact/contact.html">contact us</a>
       <a href="https://scriptsupporter.com/en/contact/aboutus.html">About us</a>
     </div>
 </div>
 </div>
   <div class="right">
-  <div class="dropdownnoboottrapright">
-    <img onclick="window.location.href = 'https://scriptsupporter.com/index.html';" src="https://scriptsupporter.com/images/swithlanguageNL.png"/>
+  <div class="dropdown">
+    <img class="active" onclick="window.location.href = 'https://scriptsupporter.com/en/index.html';" src="https://scriptsupporter.com/images/swithlanguageEN.png"/>
 </div>
 </div>
-
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
 </div>
-
-
 
 </body>
 </html>

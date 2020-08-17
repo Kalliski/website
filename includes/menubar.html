@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <title>ScriptSupporter</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://scriptsupporter.com/css/menubar.css">
+<link rel="stylesheet" href="menubar.css">
 </head>
 <body>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    jQuery(function($){
+    $('.right').prev('img').remove()
+})
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 
-<div class="navbarnoboottrap">
 
-  <a href="https://scriptsupporter.com/index.html">Home</a>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Google App Script 
+<div class="topnav" id="myTopnav">
+
+  <a href="https://scriptsupporter.com/index.html" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Google App Script 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/GoogleAppScript/sheets.html">Sheets</a>
       <a href="https://scriptsupporter.com/GoogleAppScript/docs.html">Docs</a>
       <a href="https://scriptsupporter.com/GoogleAppScript/overGoogleAppScript.html">Over</a>
     </div>
 </div>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Onderwijs
+  <div class="dropdown">
+    <button class="dropbtn">Onderwijs
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/Onderwijs/digitaliseren.html">Digitaliseren</a>
       <a href="https://scriptsupporter.com/Onderwijs/watwijkunnen.html">Wat wij kunnen doen</a>
     </div>
 </div>
-  <div class="dropdownnoboottrap">
-    <button class="dropbtnnoboottrap">Overstappen
+  <div class="dropdown">
+    <button class="dropbtn">Overstappen
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrap">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/Overstappen/g-suite.html">G-suite</a>
       <a href="https://scriptsupporter.com/Overstappen/digitaliseren.html">Digitaliseren</a>
       <a href="https://scriptsupporter.com/Overstappen/systemenaanelkaarkoppelen.html">Systemen aan elkaar koppelen</a>
     </div>
 </div>
   <div class="right">
-  <div class="dropdownnoboottrapright">
-    <button class="dropbtnnoboottrap">Contact
+  <div class="dropdown">
+    <button class="dropbtn">Contact
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-contentnoboottrapright">
+    <div class="dropdown-content">
       <a href="https://scriptsupporter.com/contact/contact.html">Neem contact op</a>
       <a href="https://scriptsupporter.com/contact/overons.html">Over ons</a>
     </div>
 </div>
 </div>
   <div class="right">
-  <div class="dropdownnoboottrapright">
-    <img onclick="window.location.href = 'https://scriptsupporter.com/en/index.html';" src="https://scriptsupporter.com/images/swithlanguageEN.png"/>
+  <div class="dropdown">
+    <img class="active" onclick="window.location.href = 'https://scriptsupporter.com/en/index.html';" src="https://scriptsupporter.com/images/swithlanguageEN.png"/>
 </div>
 </div>
 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
