@@ -20,7 +20,7 @@ body {
 
 .navbarnoboottrap {
   overflow: hidden;
-  background-color: #FFF68F;
+  background-color: #F5F5DC;
 }
 
 .navbarnoboottrap a {
@@ -47,7 +47,7 @@ body {
 
 .side {
   flex: 30%;
-  background-color: #FFF68F;
+  background-color: #F5F5DC;
   padding: 20px;
 }
 
