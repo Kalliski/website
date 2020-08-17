@@ -224,7 +224,7 @@ background: black;
 }
 
 .grid-unit:hover{
-    outline: 1px #EADFDC;
+    outline: 1px solid blue;
   }
 
 

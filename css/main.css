@@ -47,7 +47,7 @@ body {
 
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #FFF68F;
   padding: 20px;
 }
 
@@ -412,7 +412,7 @@ background: black;
 }
 
 .grid-unit:hover{
-    outline: 1px #EADFDC;
+    outline: 1px solid blue;
   }
 
 
